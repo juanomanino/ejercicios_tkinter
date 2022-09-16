@@ -54,7 +54,7 @@ c = IntVar()
 # ------------------
 # frame entrada
 # ------------------
-frame_entrada = Frame(ventana_principal)
+frame_entrada = Frame(ventana_principal)        
 frame_entrada.config(bg="ivory2", width=780, height=240)
 frame_entrada.place(x=10,y=10)
 

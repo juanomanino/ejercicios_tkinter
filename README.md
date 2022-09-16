@@ -15,3 +15,4 @@
 
 ![frame resultados](gui_01/img/frame_resultados.png "frame resultados")
 
+# GUI Cuadratica: Programa para resolver ecuaciones cuadráticas
