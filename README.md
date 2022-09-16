@@ -4,4 +4,8 @@
 
 ## Ventana principal y frame entrada datos
 
-![ventana principal y frame entrada](ventana_principal.png "Ventana principal y frame de entrada")
+![ventana principal y frame entrada](gui_01/img/ventana_principal.png "Ventana principal y frame de entrada")
+
+## Frame Operaciones(Botones)
+
+![frame operaciones](gui_01/img/frame_operaciones.png "frame operaciones")
