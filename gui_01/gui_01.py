@@ -49,7 +49,7 @@ ventana_principal.config(bg="black")
 # -------------------
 a = StringVar()
 b = StringVar()
-c = IntVar()
+c = IntVar()                
 
 # ------------------
 # frame entrada
