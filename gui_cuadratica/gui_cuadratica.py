@@ -6,15 +6,14 @@ from tkinter import messagebox
 import math
 
 def calcular():
-    d=int(b.get())^2-4*int(a.get())*int(c.get())
+    d=int(b.get())**2-4*int(a.get())*int(c.get())
     if d>0:
-        x1=-int(b.get())+sqrt(d)/2*int(a.get())
-        x2=-int(b.get())-sqrt(d)/2*int(a.get())
+        x1=(-int(b.get())+math.sqrt(d))/(2*int(a.get()))
+        x2=(-int(b.get())-math.sqrt(d))/(2*int(a.get()))
         t_exit.insert(INSERT, "x1="+str(x1)+ "\nx2="+str(x2)+ "\n Son dos raíces diferentes")
-    elif d==0:
+    elif d==0:  
         x1=-int(b.get())/2*int(a.get())
-        x2=x1
-        t_exit.insert(INSERT, "x1="+str(x1)+"\nx2="+str(x2)+ "\nx1 y x2 son iguales \n Son dos raíces reales diferentes" )
+        t_exit.insert(INSERT, "x1="+str(x1)+"\nx1 y x2 son iguales \n Son dos raíces reales diferentes" )
     else:
         t_exit.insert(INSERT,"Es parte de las raíces imaginarias o complejas.\n No tiene solución en los números reales" )
 
@@ -56,19 +55,19 @@ frame_left.place(x=10, y=10)
 
 titulol=Label(frame_left, text="Botones")
 titulol.config(bg="purple", fg="red", font=("Ubuntu", 16))
-titulol.place(x=100,y=30)
+titulol.place(x=110,y=30)
 
-bt_cal=PhotoImage()
-bt_calc=Button(frame_left, image=bt_cal, width=50, height=40, command=calcular)
-bt_calc.place(x=50, y=100)
+bt_cal=PhotoImage(file="gui_cuadratica/img/calculator.png")
+bt_calc=Button(frame_left, image=bt_cal, width=120, height=110, command=calcular)
+bt_calc.place(x=90, y=80)
 
-bt_borr=PhotoImage()
-bt_borrar=Button(frame_left, image=bt_borr, width=50, height=40, command=borrar)
-bt_borrar.place(x=50, y= 200)
+bt_borr=PhotoImage(file="gui_cuadratica/img/board.png")
+bt_borrar=Button(frame_left, image=bt_borr, width=120, height=110, command=borrar)
+bt_borrar.place(x=90, y= 210)
 
-bt_ex=PhotoImage()
-bt_exit=Button(frame_left, image=bt_ex, width=50, height=40, command=exit)
-bt_exit.place(x=50, y=300)
+bt_ex=PhotoImage(file="gui_cuadratica/img/exit.png")
+bt_exit=Button(frame_left, image=bt_ex, width=120, height=110, command=exit)
+bt_exit.place(x=90, y=340)
 
 # frame middle
 frame_middle=Frame(ventana_main)
